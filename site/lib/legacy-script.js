@@ -8,12 +8,17 @@
     document.getElementById('privacy-modal').classList.remove('show');
     document.body.style.overflow = '';
   }
+  // На странице "Расчёты и курс" ссылка "Публичная оферта" ведёт на оферту
+  // конвертации валюты, на остальных страницах — на оферту выкупа/доставки товара.
   function openOferta(){
-    document.getElementById('oferta-modal').classList.add('show');
+    const activePage = document.querySelector('.page.show');
+    const id = (activePage && activePage.id === 'page-how') ? 'oferta-exchange-modal' : 'oferta-modal';
+    document.getElementById(id).classList.add('show');
     document.body.style.overflow = 'hidden';
   }
   function closeOferta(){
     document.getElementById('oferta-modal').classList.remove('show');
+    document.getElementById('oferta-exchange-modal').classList.remove('show');
     document.body.style.overflow = '';
   }
 

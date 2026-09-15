@@ -1,0 +1,631 @@
+<header>
+  <div class="container header-inner">
+    <a class="logo" onclick="showPage('home')">
+      <span class="logo-mark">А·М</span>
+      <span style="display:flex;flex-direction:column;line-height:1.15">
+        <span class="logo-name">Аюб Магомедгаджиев</span>
+        <span class="logo-sub">ОПЛАТА · ЗАКУПКИ · КИТАЙ</span>
+      </span>
+    </a>
+    <nav>
+      <a class="nav-home active" onclick="showPage('home')">Главная</a>
+      <a class="nav-how" onclick="showPage('how')">Расчёты и курс</a>
+      <a class="nav-contacts" onclick="showPage('contacts')">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ГЛАВНАЯ -->
+<div class="page show" id="page-home">
+  <section class="hero">
+    <span class="deco deco-cny deco-xl" style="top:-40px; right:-60px; --rot:-12deg">¥</span>
+    <span class="deco deco-rub deco-md d2" style="bottom:40px; left:-30px; --rot:8deg">₽</span>
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow-row"><span class="dot"></span><span class="eyebrow">Закупки · Китай · под ключ</span></div>
+          <h1 class="hero-title">
+            <span class="title-line">Выкуп товаров</span>
+            <span class="title-accent">и оплата в Китай</span>
+          </h1>
+          <p class="title-sub">с 1688, Taobao, Poizon · от 1¥</p>
+          <p class="hero-lead">Помогаю предпринимателям выкупать товары и оплачивать поставщиков в Китае. Беру на себя поиск, проверку и оплату напрямую на счёт поставщика — без вашего китайского счёта и Alipay.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://t.me/mvkhid" target="_blank" rel="noopener">Написать в Telegram →</a>
+            <a class="btn btn-ghost" onclick="showPage('how')">Расчёты и курс →</a>
+          </div>
+          <p class="hero-hint">Пришлите ссылку на товар или задачу — отвечу с условиями в рабочее время.</p>
+        </div>
+        <div>
+          <div class="hero-services">
+            <div class="hsvc"><span class="hsvc-icon">🛒</span><div><span class="hsvc-title">Выкуп товаров</span><span class="hsvc-text">1688, Taobao, Poizon, Pinduoduo — найду, проверю, выкуплю</span></div></div>
+            <div class="hsvc"><span class="hsvc-icon">💰</span><div><span class="hsvc-title">Оплата поставщику</span><span class="hsvc-text">Плачу напрямую на счёт вашего поставщика в Китае</span></div></div>
+            <div class="hsvc"><span class="hsvc-icon">🚚</span><div><span class="hsvc-title">Доставка в РФ</span><span class="hsvc-text">Организую логистику до двери по всей России</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Кому подходит — на всю ширину, лёгкий бирюзовый тинт -->
+  <section class="full-section bg-tint">
+    <span class="deco deco-cny deco-lg" style="top:40px; right:5%; --rot:15deg">¥</span>
+    <span class="deco deco-rub deco-sm d3" style="bottom:60px; left:8%; --rot:-10deg">₽</span>
+    <div class="container">
+      <div class="ministats no-border-top">
+        <div class="ms-cell" style="align-items:center;text-align:center"><span class="ms-num">4 года</span><span class="ms-label">в нише с Китаем</span></div>
+        <div class="ms-cell" style="align-items:center;text-align:center"><span class="ms-num">от 1¥</span><span class="ms-label">минимальная сумма</span></div>
+        <div class="ms-cell" style="align-items:center;text-align:center"><span class="ms-num">вся РФ</span><span class="ms-label">перевод по СБП онлайн</span></div>
+      </div>
+      <div class="usecase no-border">
+        <div class="usecase-head">
+          <span class="eyebrow">Площадки и поставщики</span>
+          <h3 class="usecase-title">Где <span class="sec-title-accent">закупаю</span></h3>
+        </div>
+        <div class="usecase-grid">
+          <div class="uc-item">
+            <span class="uc-icon">🏭</span>
+            <span class="uc-text"><b>1688</b> — оптом от производителя</span>
+          </div>
+          <div class="uc-item">
+            <span class="uc-icon">🛍️</span>
+            <span class="uc-text"><b>Taobao</b> — розница и мелкий опт</span>
+          </div>
+          <div class="uc-item">
+            <span class="uc-icon">👟</span>
+            <span class="uc-text"><b>Poizon</b> / Dewu — обувь и одежда</span>
+          </div>
+          <div class="uc-item">
+            <span class="uc-icon">📦</span>
+            <span class="uc-text"><b>Pinduoduo</b> — товары по низким ценам</span>
+          </div>
+          <div class="uc-item">
+            <span class="uc-icon">🤝</span>
+            <span class="uc-text">Ваш поставщик — оплата напрямую</span>
+          </div>
+          <div class="uc-item">
+            <span class="uc-icon">📱</span>
+            <span class="uc-text"><b>Alipay</b> и WeChat — пополнение</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Мини-статы + как проходит сделка — на всю ширину -->
+  <section class="full-section">
+    <span class="deco deco-rub deco-lg d4" style="top:30%; left:-50px; --rot:-8deg">₽</span>
+    <span class="deco deco-cny deco-md d2" style="bottom:10%; right:5%; --rot:18deg">¥</span>
+    <div class="container">
+      <div class="steps-inline no-border">
+        <div class="si-head">
+          <span class="eyebrow">Как проходит сделка</span>
+          <h3 class="usecase-title">От заявки <span class="sec-title-accent">до доставки товара</span></h3>
+        </div>
+        <div class="si-numbered">
+          <div class="si-num-item">
+            <div class="si-num-circle">1</div>
+            <span class="si-num-text">Пишете товар или задачу по закупке</span>
+          </div>
+          <div class="si-num-item">
+            <div class="si-num-circle">2</div>
+            <span class="si-num-text">Согласуем условия, курс и реквизиты</span>
+          </div>
+          <div class="si-num-item">
+            <div class="si-num-circle">3</div>
+            <span class="si-num-text">Оплачиваю поставщику, выкупаю товар</span>
+          </div>
+          <div class="si-num-item">
+            <div class="si-num-circle">4</div>
+            <span class="si-num-text">Проверка, упаковка и доставка в РФ</span>
+          </div>
+        </div>
+        <a class="si-link" onclick="showPage('how')">Как это работает подробнее →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Обо мне — на всю ширину, lift-фон -->
+  <section class="full-section bg-lift">
+    <span class="deco deco-cny deco-xl d3" style="top:-20px; right:-80px; --rot:-15deg">¥</span>
+    <span class="deco deco-rub deco-sm" style="top:60%; left:6%; --rot:10deg">₽</span>
+    <div class="container">
+      <div class="about no-border">
+        <div class="about-grid">
+          <div class="about-photo"><img src="/about.jpg" alt="Аюб Магомедгаджиев"></div>
+          <div class="about-text">
+            <span class="eyebrow">Знакомство</span>
+            <h2 class="sec-title">Меня зовут <span class="sec-title-accent">Аюб</span></h2>
+            <p class="about-lead">
+              Уже около 4 лет работаю с Китаем: помогаю с выкупом товаров, оплатой поставщиков и расчётами с Китаем за юани.
+            </p>
+            <p class="about-lead">
+              Начинал сам с нуля, в далёком 2022 году, поэтому хорошо понимаю, где у людей чаще всего возникают проблемы: как оплатить китайцу, какой курс считать, кому можно доверять и как не потерять деньги на ровном месте.
+            </p>
+            <p class="about-lead">
+              Сейчас через меня проходят и небольшие обмены от 1¥, и оплаты напрямую производителям для предпринимателей. Для меня главное — не разовая сделка, а чтобы человек спокойно вернулся снова.
+            </p>
+          </div>
+          <div class="about-principles">
+            <div class="principle">
+              <div class="principle-icon">●</div>
+              <div class="principle-title">Прозрачный курс</div>
+              <div class="principle-text">Курс публикую в канале. Перед оплатой всё можно пересчитать и уточнить.</div>
+            </div>
+            <div class="principle">
+              <div class="principle-icon">●</div>
+              <div class="principle-title">Постоянные клиенты</div>
+              <div class="principle-text">Большая часть сделок — те, кто уже обменивал или оплачивал через меня раньше.</div>
+            </div>
+            <div class="principle">
+              <div class="principle-icon">●</div>
+              <div class="principle-title">Без мутных схем</div>
+              <div class="principle-text">Если сделка вызывает сомнения — лучше откажусь. Репутация важнее разовой сделки.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Почему мне доверяют — безопасность -->
+  <section class="full-section">
+    <span class="deco deco-cny deco-md d2" style="top:40px; left:5%; --rot:-14deg">¥</span>
+    <span class="deco deco-rub deco-lg d4" style="bottom:0; right:-30px; --rot:10deg">₽</span>
+    <div class="container">
+      <div class="steps-inline no-border">
+        <div class="si-head">
+          <h3 class="usecase-title">Почему мне <span class="sec-title-accent">доверяют</span></h3>
+        </div>
+        <div class="si-flow">
+          <div class="si-block">
+            <div class="principle-title">Можно начать с малого</div>
+            <div class="principle-text">Если переводите впервые — начните с небольшой суммы, чтобы спокойно убедиться. Дальше уже как удобно.</div>
+          </div>
+          <div class="si-block">
+            <div class="principle-title">Курс фиксируется до перевода</div>
+            <div class="principle-text">Что зафиксировали в начале — то и получаете. Даже если рынок дёрнулся, пока вы переводите.</div>
+          </div>
+          <div class="si-block">
+            <div class="principle-title">4 года в нише</div>
+            <div class="principle-text">Работаю с Китаем не первый день. Курс и репутация открыто — в канале <a href="https://t.me/reseller_rmb" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">@reseller_rmb</a>.</div>
+          </div>
+          <div class="si-block">
+            <div class="principle-title">Чеки и отзывы — открыто</div>
+            <div class="principle-text">Реальные чеки и <a href="https://t.me/reseller_testimonials" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">отзывы клиентов</a> выкладываю отдельно — посмотреть можно в любой момент.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</div>
+
+<!-- КАК РАБОТАЕТ -->
+<div class="page" id="page-how">
+  <section class="section" id="calc-anchor" style="padding-top:20px; position:relative; overflow:hidden">
+    <span class="deco deco-cny deco-lg" style="top:80px; right:-30px; --rot:-10deg">¥</span>
+    <span class="deco deco-rub deco-sm d3" style="bottom:40px; left:5%; --rot:15deg">₽</span>
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">Калькулятор</span>
+        <h2 class="sec-title">Отдаёте рубли — <span class="sec-title-accent">получаете юани</span></h2>
+      </div>
+      <div class="calc-wrap">
+        <div class="tiers-bar">
+          <div class="tiers-head"><span class="tiers-label">Курс безналичного обмена · 13.09</span><a class="tiers-source" href="https://t.me/reseller_rmb" target="_blank" rel="noopener">из @reseller_rmb</a></div>
+          <div class="tiers">
+            <div class="tier tier-active"><span class="tier-from">от 1¥</span><span class="tier-rate mono">11,75 ₽</span></div>
+            <div class="tier"><span class="tier-from">от 1 000¥</span><span class="tier-rate mono">11,60 ₽</span></div>
+            <div class="tier"><span class="tier-from">от 30 000¥</span><span class="tier-rate mono">11,55 ₽</span></div>
+          </div>
+        </div>
+        <div class="calc">
+          <div class="field"><label class="field-label">Отдаёте · Рубли</label><div class="input-wrap"><input class="calc-input" id="amount" value="11750"><span class="currency" id="from-cur">₽</span></div></div>
+          <div class="calc-arrow">→</div>
+          <div class="field"><label class="field-label">Получаете · Юани</label><div class="input-wrap input-result"><span class="calc-input result mono" id="result">1 000,00</span><span class="currency" id="to-cur">¥</span></div></div>
+        </div>
+        <div class="active-row">
+          <span class="active-info" id="active-info">Применён курс <span class="mono">11,75 ₽</span> за 1¥</span>
+          <span class="upsell" id="upsell">от 1 000¥ выгоднее — <span class="mono">11,60 ₽</span></span>
+        </div>
+        <div class="calc-footer">
+          <div><span class="cash-label">Обратный расчёт и наличные</span><span class="cash-text">Юань → рубль и наличными — по отдельному курсу, уточняйте в Telegram</span></div>
+          <a class="btn btn-primary" id="order-btn">Оформить заявку →</a>
+        </div>
+        <div class="updated"><span class="updated-dot"></span> обновлено · 13 сентября в 10:00</div>
+      </div>
+    </div>
+  </section>
+  <section class="section" style="padding-top:70px; position:relative; overflow:hidden">
+    <span class="deco deco-cny deco-lg d3" style="top:40px; right:-30px; --rot:-12deg">¥</span>
+    <span class="deco deco-rub deco-md" style="top:50%; left:-20px; --rot:10deg">₽</span>
+    <span class="deco deco-cny deco-sm d2" style="bottom:80px; right:10%; --rot:8deg">¥</span>
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">Как это работает</span>
+        <h2 class="sec-title">От заявки <span class="sec-title-accent">до получения средств</span></h2>
+      </div>
+
+      <div class="steps-num">
+        <div class="sn-item">
+          <div class="sn-circle">1</div>
+          <div class="sn-body">
+            <span class="sn-title">Пишете в Telegram</span>
+            <span class="sn-text">Сообщаете сумму и задачу по оплате. Отвечаю быстро в рабочее время.</span>
+          </div>
+        </div>
+        <div class="sn-item">
+          <div class="sn-circle">2</div>
+          <div class="sn-body">
+            <span class="sn-title">Согласуем курс</span>
+            <span class="sn-text">Актуальный курс виден на сайте и в канале. Наличными — курс ниже, уточняйте.</span>
+          </div>
+        </div>
+        <div class="sn-item">
+          <div class="sn-circle">3</div>
+          <div class="sn-body">
+            <span class="sn-title">Перевод</span>
+            <span class="sn-text">Вы переводите сумму удобным способом — по СБП онлайн в любую точку РФ или наличными.</span>
+          </div>
+        </div>
+        <div class="sn-item">
+          <div class="sn-circle">4</div>
+          <div class="sn-body">
+            <span class="sn-title">Получаете средства</span>
+            <span class="sn-text">Отправляю встречную сумму. Обычно вся сделка укладывается в 5–15 минут.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-card">
+        <div class="schedule-grid">
+          <div>
+            <div class="schedule-label">Время работы</div>
+            <div class="schedule-time">с 10:00 до 20:00 мск</div>
+          </div>
+          <div class="schedule-note">
+            На заявки вне рабочего времени отвечаю утром следующего дня.
+          </div>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-card">
+          <div class="info-title">Направления</div>
+          <div class="info-text">Рубль ⇄ юань — основное направление с публичным курсом. Другие направления — по индивидуальному курсу, уточняйте.</div>
+        </div>
+        <div class="info-card">
+          <div class="info-title">Способы</div>
+          <div class="info-text">Безналичный перевод по СБП — по всей России онлайн. Наличные — в Дагестане и некоторых городах России, уточняйте.</div>
+        </div>
+        <div class="info-card">
+          <div class="info-title">Минимальная сумма</div>
+          <div class="info-text">От 1¥, без верхнего лимита. Курс зависит от объёма — чем больше, тем выгоднее.</div>
+        </div>
+      </div>
+
+      <p class="how-note">Возможен и обратный расчёт — юани на рубли. По вопросам пишите в <a href="https://t.me/mvkhid" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">Telegram</a>.</p>
+
+      <div class="faq">
+        <div class="sec-head" style="margin-bottom:24px">
+          <h3 class="usecase-title"><span class="sec-title-accent">FAQ</span></h3>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Какая минимальная сумма?<span class="faq-icon">+</span></button>
+          <div class="faq-wrap"><div class="faq-inner"><div class="faq-answer">От 1¥, без ограничений снизу и без верхнего лимита. Курс зависит от объёма — чем больше сумма, тем выгоднее ставка.</div></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Как быстро проходит оплата?<span class="faq-icon">+</span></button>
+          <div class="faq-wrap"><div class="faq-inner"><div class="faq-answer">Обычно вся сделка укладывается в 5–15 минут в рабочее время. Я на связи с 10:00 до 20:00 мск.</div></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">А если курс изменится, пока я перевожу?<span class="faq-icon">+</span></button>
+          <div class="faq-wrap"><div class="faq-inner"><div class="faq-answer">Курс фиксируется в момент договорённости. Что зафиксировали — то и получаете, даже если рынок дёрнулся, пока идёт перевод.</div></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">В каких городах можно наличными?<span class="faq-icon">+</span></button>
+          <div class="faq-wrap"><div class="faq-inner"><div class="faq-answer">Махачкала и ряд городов России. Наличными курс отдельный — уточняйте в Telegram.</div></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Какие способы оплаты?<span class="faq-icon">+</span></button>
+          <div class="faq-wrap"><div class="faq-inner"><div class="faq-answer">От вас — перевод по СБП или на карту, по всей России онлайн. Юани отправляю на Alipay, WeChat или напрямую поставщику.</div></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Это безопасно?<span class="faq-icon">+</span></button>
+          <div class="faq-wrap"><div class="faq-inner"><div class="faq-answer">Если переводите впервые — можно начать с небольшой суммы и спокойно убедиться. Плюс курс открыто в канале <a href="https://t.me/reseller_rmb" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">@reseller_rmb</a>, а реальные чеки и <a href="https://t.me/reseller_testimonials" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">отзывы клиентов</a> — в отдельном канале.</div></div></div>
+        </div>
+      </div>
+    </div>
+    <span class="deco deco-cny deco-md" style="bottom:30px; right:8%; --rot:15deg">¥</span>
+    <span class="deco deco-rub deco-sm d2" style="bottom:60px; left:12%; --rot:-8deg">₽</span>
+  </section>
+  <section class="full-section bg-tint" style="overflow:hidden">
+    <span class="deco deco-rub deco-md d2" style="top:30px; right:8%; --rot:12deg">₽</span>
+    <span class="deco deco-cny deco-lg d4" style="bottom:-40px; left:3%; --rot:-12deg">¥</span>
+    <div class="container">
+      <div class="sec-head" style="margin:0 0 28px">
+        <span class="eyebrow">Реальные сделки</span>
+        <h2 class="sec-title"><span class="sec-title-accent">Часть</span> реальных сделок</h2>
+        <p style="margin:14px 0 0; max-width:560px; color:var(--text-secondary); line-height:1.6">От пополнения Alipay клиентов до оплат поставщикам клиентов.</p>
+      </div>
+    </div>
+    <div class="marquee" id="proof-marquee">
+      <div class="marquee-track">
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-1.jpg" alt=""></div>
+          <div class="proof-cap"><span>150 ¥ · 29.12</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-2.jpg" alt=""></div>
+          <div class="proof-cap"><span>787 ¥ · 20.03</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-3.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 070 ¥ · 16.09</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-4.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 333 ¥ · 16.04</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-5.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 500 ¥ · 28.05</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-6.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 800 ¥ · 17.04</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)">
+          <div class="proof-shot has-img"><img src="/proof/check-7.jpg" alt=""></div>
+          <div class="proof-cap"><span>6 420 ¥ · 17.03</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-1.jpg" alt=""></div>
+          <div class="proof-cap"><span>150 ¥ · 29.12</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-2.jpg" alt=""></div>
+          <div class="proof-cap"><span>787 ¥ · 20.03</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-3.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 070 ¥ · 16.09</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-4.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 333 ¥ · 16.04</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-5.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 500 ¥ · 28.05</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-6.jpg" alt=""></div>
+          <div class="proof-cap"><span>1 800 ¥ · 17.04</span></div>
+        </div>
+        <div class="proof-card" onclick="openLightbox(this)" aria-hidden="true">
+          <div class="proof-shot has-img"><img src="/proof/check-7.jpg" alt=""></div>
+          <div class="proof-cap"><span>6 420 ¥ · 17.03</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:24px">
+      <p style="font-size:.88rem; color:var(--text-muted); margin:0; text-align:center">Личные данные клиентов на скриншотах скрыты. Все операции реальны.</p>
+    </div>
+  </section>
+</div>
+
+<!-- КОНТАКТЫ -->
+<div class="page" id="page-contacts">
+  <section class="section" style="padding-top:70px; position:relative; overflow:hidden">
+    <span class="deco deco-cny deco-xl d3" style="top:-30px; right:-80px; --rot:-12deg">¥</span>
+    <span class="deco deco-rub deco-sm" style="bottom:120px; left:8%; --rot:15deg">₽</span>
+    <div class="container">
+      <div class="sec-head">
+        <span class="eyebrow">Контакты</span>
+        <h2 class="sec-title">Связаться <span class="sec-title-accent">со мной</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card primary">
+          <div class="cc-label">Основная связь</div>
+          <div class="cc-value">Telegram</div>
+          <a class="btn btn-primary" href="https://t.me/mvkhid" target="_blank" rel="noopener">Написать @mvkhid →</a>
+          <p style="color:var(--text-secondary); font-size:.9rem; margin-top:18px; line-height:1.6">Отвечаю в рабочее время.<br>По всем вопросам в лс.</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-label">Режим и география</div>
+          <ul class="cc-list">
+            <li><span class="k">Время работы</span><span class="v">с 10:00 до 20:00 мск</span></li>
+            <li><span class="k">Публикация курса</span><span class="v">в 10:00 утра</span></li>
+            <li><span class="k">Онлайн (СБП)</span><span class="v">вся Россия</span></li>
+            <li><span class="k">Наличные</span><span class="v">Дагестан + города</span></li>
+            <li><span class="k">Канал курса</span><a class="v link" href="https://t.me/reseller_rmb" target="_blank" rel="noopener">@reseller_rmb</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <span class="deco deco-rub deco-md" style="bottom:30px; left:8%; --rot:-12deg">₽</span>
+    <span class="deco deco-cny deco-sm d4" style="bottom:50px; right:12%; --rot:10deg">¥</span>
+  </section>
+</div>
+
+
+<footer>
+  <div class="container footer-inner">
+    <span style="display:flex; flex-direction:column; gap:4px">
+      <span>© 2026 ИП Магомедгаджиев Аюб Магомедгаджиевич</span>
+      <span style="font-size:.82em; color:var(--text-muted)">ОГРНИП 326050000130671 · ИНН 050029997326</span>
+    </span>
+    <span style="display:flex; gap:24px; flex-wrap:wrap; justify-content:flex-end">
+      <a href="#" class="footer-link" onclick="openPrivacy(); return false">Политика</a>
+      <a href="#" class="footer-link" onclick="openOferta(); return false">Публичная оферта</a>
+      <a class="footer-link" href="mailto:mvkhid.info@gmail.com">mvkhid.info@gmail.com</a>
+    </span>
+  </div>
+</footer>
+
+
+<div class="demo-switch">
+  <button class="active" onclick="showPage('home',this)">Главная</button>
+  <button onclick="showPage('how',this)">Расчёты</button>
+  <button onclick="showPage('contacts',this)">Контакты</button>
+</div>
+
+<!-- Cookie consent баннер (превью) -->
+<div class="cookie-consent" id="cookie-banner" role="dialog">
+  <div class="cookie-text">
+    Сайт использует cookies для аналитики и улучшения работы. Продолжая, вы соглашаетесь с
+    <a href="#" class="cookie-link" onclick="openPrivacy(); return false">Политикой обработки ПД</a>.
+  </div>
+  <div class="cookie-actions">
+    <button class="btn btn-ghost cookie-btn" onclick="document.getElementById('cookie-banner').style.display='none'"><span class="ck-full">Только необходимые</span><span class="ck-short">Необходимые</span></button>
+    <button class="btn btn-primary cookie-btn" onclick="document.getElementById('cookie-banner').style.display='none'">Принять</button>
+  </div>
+</div>
+
+<!-- Модалка: Политика конфиденциальности -->
+<div class="modal-overlay" id="privacy-modal" onclick="if(event.target===this) closePrivacy()">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" onclick="closePrivacy()" aria-label="Закрыть">×</button>
+    <div class="modal-content">
+      <span class="eyebrow" style="margin-bottom:14px; display:inline-flex">Юридическая информация</span>
+      <h2 class="modal-title">Политика <span class="sec-title-accent">конфиденциальности</span></h2>
+
+      <p class="about-lead">Настоящая Политика регулирует обработку персональных данных и использование cookies на этом сайте (далее — Сайт), владельцем которого является Индивидуальный предприниматель Магомедгаджиев Аюб Магомедгаджиевич (ОГРНИП 326050000130671, ИНН 050029997326) (далее — Владелец).</p>
+
+      <h3 class="modal-h3">1. Какие данные собираются</h3>
+      <p class="about-lead">При посещении Сайта автоматически собираются обезличенные технические данные:</p>
+      <ul class="modal-ul">
+        <li>IP-адрес, информация о браузере и устройстве;</li>
+        <li>посещённые страницы, время и длительность визита;</li>
+        <li>источник перехода (поисковая система, прямая ссылка и т.&nbsp;п.);</li>
+        <li>cookies, устанавливаемые сервисом Яндекс.Метрика.</li>
+      </ul>
+      <p class="about-lead">Сайт не запрашивает у вас имя, телефон, паспортные данные или иную идентифицирующую информацию через формы. Контакт с Владельцем происходит через Telegram — на условиях этой платформы.</p>
+
+      <h3 class="modal-h3">2. Для чего используются данные</h3>
+      <ul class="modal-ul">
+        <li>анализ посещаемости и поведения посетителей (Яндекс.Метрика);</li>
+        <li>улучшение работы и содержания Сайта;</li>
+        <li>обеспечение технической стабильности.</li>
+      </ul>
+
+      <h3 class="modal-h3">3. Cookies</h3>
+      <p class="about-lead">Сайт использует cookies — небольшие текстовые файлы, которые сохраняются в вашем браузере. Они нужны для работы аналитики и сохранения вашего согласия с этой политикой. Вы можете отключить cookies в настройках браузера, при этом часть функций Сайта может работать некорректно.</p>
+
+      <h3 class="modal-h3">4. Передача данных третьим лицам</h3>
+      <p class="about-lead">Данные передаются только сервису Яндекс.Метрика (ООО «Яндекс») на условиях их <a href="https://yandex.ru/legal/confidential/" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">политики конфиденциальности</a>. Иным третьим лицам данные не передаются и в коммерческих целях не продаются.</p>
+
+      <h3 class="modal-h3">5. Ваши права</h3>
+      <p class="about-lead">В соответствии с Федеральным законом № 152-ФЗ «О персональных данных» вы вправе:</p>
+      <ul class="modal-ul">
+        <li>получить информацию об обработке ваших данных;</li>
+        <li>отозвать согласие на обработку;</li>
+        <li>потребовать удаления или уточнения данных.</li>
+      </ul>
+      <p class="about-lead">Для этого напишите в Telegram: <a href="https://t.me/mvkhid" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">@mvkhid</a> или на e-mail: <a href="mailto:mvkhid.info@gmail.com" style="color:var(--brand); font-weight:600">mvkhid.info@gmail.com</a>.</p>
+
+      <h3 class="modal-h3">6. Изменения политики</h3>
+      <p class="about-lead">Владелец оставляет за собой право обновлять данную политику. Актуальная версия всегда доступна по этому адресу.</p>
+
+      <p class="about-lead" style="color:var(--text-muted); font-size:.92rem; font-style:italic; margin-top:30px">Дата последнего обновления: 13 сентября 2026 г.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Модалка: Публичная оферта -->
+<div class="modal-overlay" id="oferta-modal" onclick="if(event.target===this) closeOferta()">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" onclick="closeOferta()" aria-label="Закрыть">×</button>
+    <div class="modal-content">
+      <span class="eyebrow" style="margin-bottom:14px; display:inline-flex">Юридическая информация</span>
+      <h2 class="modal-title">Публичная <span class="sec-title-accent">оферта</span></h2>
+      <p class="about-lead" style="font-weight:600; color:var(--text-primary)">на оказание услуг по организации выкупа и доставки товара из КНР</p>
+
+      <p class="about-lead">Индивидуальный предприниматель Магомедгаджиев Аюб (далее — «Исполнитель»), ОГРНИП 326050000130671, ИНН 050029997326, публикует настоящий документ в соответствии со ст. 437 Гражданского кодекса РФ.</p>
+
+      <h3 class="modal-h3">1. Предмет договора</h3>
+      <p class="about-lead">1.1. Исполнитель оказывает Заказчику услуги по поиску, выкупу и организации доставки товара с территории КНР по одному из следующих форматов:</p>
+      <ul class="modal-ul">
+        <li><b>Розничный выкуп</b> — поиск и выкуп единичного товара или товара в ограниченном количестве на торговых площадках КНР;</li>
+        <li><b>Оптовый выкуп</b> — поиск и выкуп товара партией.</li>
+      </ul>
+      <p class="about-lead">1.2. Стоимость услуги по каждому формату определяется индивидуально с учётом категории товара, объёма партии и способа доставки и указывается Заказчику в выставленном счёте до момента оплаты.</p>
+
+      <h3 class="modal-h3">2. Порядок оказания услуг</h3>
+      <p class="about-lead">2.1. Заказчик направляет заявку с фото и/или характеристиками требуемого товара.</p>
+      <p class="about-lead">2.2. Исполнитель подбирает товар у поставщиков в КНР и направляет Заказчику фото, цвет, цену и, по запросу, дополнительные фотографии товара для согласования. Предложенная цена и наличие товара у поставщика действительны в течение ограниченного времени. При задержке подтверждения или оплаты со стороны Заказчика цена и наличие товара подлежат повторному согласованию.</p>
+      <p class="about-lead">2.3. После согласования Исполнитель производит выкуп товара и формирует счёт.</p>
+      <p class="about-lead">2.4. По поступлении товара на склад Исполнителя в КНР Заказчику предоставляется фото- и видеоотчёт.</p>
+      <p class="about-lead">2.5. Услуга считается оказанной с момента передачи товара Заказчику или транспортной компании для доставки Заказчику.</p>
+
+      <h3 class="modal-h3">3. Акцепт оферты</h3>
+      <p class="about-lead">3.1. Акцептом настоящей оферты признаётся оплата Заказчиком выставленного счёта (полностью или частично, в соответствии с разделом 4) либо иное подтверждение согласия с условиями заявки.</p>
+
+      <h3 class="modal-h3">4. Порядок расчётов</h3>
+      <p class="about-lead">4.1. Оплата может производиться единовременно либо частями (траншами) по согласованному с Заказчиком графику, до момента передачи товара.</p>
+      <p class="about-lead">4.2. Каждый транш является самостоятельным платежом и указывается в назначении отдельно: «Оплата по заявке № [номер] от [дата], транш [N]. Без НДС».</p>
+      <p class="about-lead">4.3. Услуга считается оплаченной в полном объёме после поступления всех траншей, предусмотренных счётом.</p>
+      <p class="about-lead">4.4. Стоимость товара определяется по курсу иностранной валюты на дату оплаты Заказчиком счёта. Исполнитель производит выкуп товара в максимально короткий срок после получения оплаты.</p>
+      <p class="about-lead">4.5. При розничном выкупе стоимость товара и доставки оплачивается Заказчиком единовременно, в полном объёме, до начала выкупа.</p>
+
+      <h3 class="modal-h3">5. Права и обязанности сторон</h3>
+      <p class="about-lead">5.1. Исполнитель обязан информировать Заказчика об изменении сроков поставки при их возникновении.</p>
+      <p class="about-lead">5.2. Исполнитель не является производителем товара.</p>
+      <p class="about-lead">5.3. Заказчик обязан своевременно вносить оплату согласно графику, указанному в счёте.</p>
+      <p class="about-lead">5.4. При оптовом выкупе Заказчик самостоятельно выбирает способ и сроки доставки груза, а также способ упаковки товара для транспортировки. Если Заказчик не следовал рекомендациям Исполнителя по упаковке, и груз прибыл повреждённым, Исполнитель ответственности не несёт.</p>
+      <p class="about-lead">5.5. Порядок работы с производственным браком товара:</p>
+      <ul class="modal-ul">
+        <li>a) при выявлении заметного брака на этапе приёмки товара на складе Исполнителя в КНР Заказчик вправе потребовать возврат товара продавцу; стоимость обратной доставки продавцу оплачивается Заказчиком;</li>
+        <li>b) возврат не производится, если брак признан незначительным либо Заказчик самостоятельно указал продавца и был осведомлён о возможном браке;</li>
+        <li>c) если брак не выявлен на этапе приёмки и товар передан Заказчику на территории РФ, возврат товара невозможен; Исполнитель по желанию Заказчика может оказать содействие в организации возврата, но не гарантирует его результат;</li>
+        <li>d) Заказчик обязан подтвердить приёмку либо заявить претензию по браку в течение <b>3 (трёх) рабочих дней</b> с момента получения фото- и видеоотчёта. При отсутствии ответа в указанный срок товар считается принятым Заказчиком без претензий.</li>
+      </ul>
+      <p class="about-lead">5.6. Отмена заявки Заказчиком:</p>
+      <ul class="modal-ul">
+        <li>a) если выкуп товара у продавца не произведён — возвращается полная уплаченная сумма, включая вознаграждение Исполнителя;</li>
+        <li>b) если выкуп уже произведён — возврат производится с удержанием части стоимости, соответствующей фактически понесённым Исполнителем расходам на момент отмены, размер которой зависит от типа и категории товара; размер удержания сообщается Заказчику до подтверждения отмены.</li>
+      </ul>
+      <p class="about-lead">5.7. Страхование груза при доставке:</p>
+      <ul class="modal-ul">
+        <li>a) стоимость доставки по умолчанию включает страхование груза;</li>
+        <li>b) Заказчик вправе отказаться от страхования для снижения стоимости доставки; в этом случае Исполнитель не производит возврат средств за повреждение или утрату груза при транспортировке;</li>
+        <li>c) при наличии страхования возврат средств за повреждённый или утраченный груз возможен, размер компенсации зависит от вида, размера и объёма ущерба.</li>
+      </ul>
+      <p class="about-lead">5.8. Стоимость доставки оптового груза рассчитывается предварительно до оплаты Заказчиком, исходя из примерных данных о габаритах и весе груза, без учёта итоговой упаковки. Точная стоимость доставки определяется только после упаковки груза и расчёта итогового объёма и веса на складе перед отправкой. Исполнитель не несёт ответственности за расхождение между предварительным и итоговым расчётом стоимости доставки, а также за несогласие Заказчика с итоговой стоимостью.</p>
+      <p class="about-lead">5.9. О прибытии оптового груза в Москву Исполнитель уведомляет Заказчика, как правило, до 12:00 по московскому времени в день прибытия. Оплата доставки по актуальному курсу выбранной валюты должна быть произведена Заказчиком в тот же день до 16:00 по московскому времени. При невнесении оплаты в указанный срок груз остаётся на хранении в Москве на дополнительные сутки, за которые начисляется плата за хранение в зависимости от объёма, веса и количества мест груза. В случае отказа Заказчика от оплаты доставки Исполнитель не несёт ответственности и не производит возврат средств, включая случаи, когда товар стал для Заказчика невыгодным или неактуальным.</p>
+      <p class="about-lead">5.10. Исполнитель не несёт ответственности за несоответствие приобретённого товара ожиданиям Заказчика, если товар полностью соответствует фото, характеристикам или указаниям (включая указание конкретного продавца), предоставленным самим Заказчиком при формировании заявки.</p>
+      <p class="about-lead">5.11. В случае неоплаты Заказчиком доставки и/или хранения груза в течение продолжительного времени Исполнитель не гарантирует сохранность груза. Груз может быть утрачен в процессе хранения или передан на утилизацию транспортной компанией в соответствии с её внутренними правилами. Исполнитель не несёт ответственности за утрату груза в этом случае и не производит возврат уплаченных Заказчиком средств.</p>
+
+      <h3 class="modal-h3">6. Ответственность сторон</h3>
+      <p class="about-lead">6.1. За нарушение сроков доставки по вине Исполнителя Заказчик вправе требовать возмещения документально подтверждённых убытков в порядке, установленном законодательством РФ.</p>
+      <p class="about-lead">6.2. Исполнитель не несёт ответственности за задержки, вызванные действиями таможенных органов, транспортных компаний и иных третьих лиц.</p>
+
+      <h3 class="modal-h3">7. Форс-мажор</h3>
+      <p class="about-lead">7.1. Стороны освобождаются от ответственности за неисполнение обязательств вследствие обстоятельств непреодолимой силы, включая изменения таможенного и валютного законодательства РФ и КНР, а также изъятие, конфискацию или иное удержание груза таможенными органами РФ или КНР.</p>
+
+      <h3 class="modal-h3">8. Срок действия и изменение оферты</h3>
+      <p class="about-lead">8.1. Оферта действует бессрочно с момента публикации и до момента её отзыва.</p>
+      <p class="about-lead">8.2. Исполнитель вправе в одностороннем порядке вносить изменения в условия оферты, которые вступают в силу с момента публикации новой редакции.</p>
+
+      <h3 class="modal-h3">9. Реквизиты Исполнителя</h3>
+      <p class="about-lead">ИП Магомедгаджиев Аюб<br>ОГРНИП: 326050000130671<br>ИНН: 050029997326<br>Адрес регистрации: Республика Дагестан, г. Махачкала<br>Telegram: <a href="https://t.me/mvkhid" target="_blank" rel="noopener" style="color:var(--brand); font-weight:600">@mvkhid</a><br>E-mail: <a href="mailto:mvkhid.info@gmail.com" style="color:var(--brand); font-weight:600">mvkhid.info@gmail.com</a></p>
+
+      <p class="about-lead" style="color:var(--text-muted); font-size:.92rem; font-style:italic; margin-top:30px">Дата публикации оферты: 13 сентября 2026 г.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox для чеков -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Закрыть">×</button>
+  <div class="lightbox-content" onclick="event.stopPropagation()">
+    <div id="lightbox-body"></div>
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+</div>

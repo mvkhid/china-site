@@ -1,0 +1,17 @@
+name = "reseller-rate-worker"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+# Каждые 15 минут
+[triggers]
+crons = ["*/15 * * * *"]
+
+# Создать неймспейс: wrangler kv namespace create RATE_KV
+# и вставить сюда id из вывода команды.
+[[kv_namespaces]]
+binding = "RATE_KV"
+id = "7969d2583b3849fda678703c1ca1af86"
+
+[vars]
+# Домен сайта на Vercel (стабильный production-алиас). При подключении своего домена — обновить сюда.
+ALLOWED_ORIGIN = "https://site-iota-ruddy-38.vercel.app"

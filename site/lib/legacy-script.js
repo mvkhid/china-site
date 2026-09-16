@@ -389,6 +389,11 @@
       const nl=document.querySelector(navMap[name]);
       if(nl) nl.classList.add('active');
     }
+    // Ссылка "Публичная оферта" в футере ведёт на прямой URL нужного документа
+    // (клик всё равно открывает модалку мгновенно — см. openOferta/onclick), чтобы
+    // её можно было скопировать/открыть в новой вкладке и попасть на актуальную оферту.
+    const ofertaLink = document.getElementById('oferta-link');
+    if(ofertaLink) ofertaLink.href = name === 'how' ? '/oferta-obmen-valyuty' : '/oferta';
     window.scrollTo({top:0});
     // показать reveal-блоки активной страницы
     setTimeout(()=>{

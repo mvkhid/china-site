@@ -8,20 +8,6 @@
     document.getElementById('privacy-modal').classList.remove('show');
     document.body.style.overflow = '';
   }
-  // На странице "Расчёты и курс" ссылка "Публичная оферта" ведёт на оферту
-  // по расчётам, на остальных страницах — на оферту выкупа/доставки товара.
-  function openOferta(){
-    const activePage = document.querySelector('.page.show');
-    const id = (activePage && activePage.id === 'page-how') ? 'oferta-exchange-modal' : 'oferta-modal';
-    document.getElementById(id).classList.add('show');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeOferta(){
-    document.getElementById('oferta-modal').classList.remove('show');
-    document.getElementById('oferta-exchange-modal').classList.remove('show');
-    document.body.style.overflow = '';
-  }
-
   // ── Lightbox ──
   function openLightbox(card){
     const shot = card.querySelector('.proof-shot');
@@ -48,7 +34,6 @@
   document.addEventListener('keydown', e => {
     if(e.key === 'Escape'){
       closePrivacy();
-      closeOferta();
       closeLightbox();
     }
   });
@@ -389,9 +374,8 @@
       const nl=document.querySelector(navMap[name]);
       if(nl) nl.classList.add('active');
     }
-    // Ссылка "Публичная оферта" в футере ведёт на прямой URL нужного документа
-    // (клик всё равно открывает модалку мгновенно — см. openOferta/onclick), чтобы
-    // её можно было скопировать/открыть в новой вкладке и попасть на актуальную оферту.
+    // Ссылка "Публичная оферта" в футере — обычная навигация на отдельную
+    // страницу нужного документа, адрес подстраивается под активную страницу.
     const ofertaLink = document.getElementById('oferta-link');
     if(ofertaLink) ofertaLink.href = name === 'how' ? '/oferta-raschety' : '/oferta';
     window.scrollTo({top:0});

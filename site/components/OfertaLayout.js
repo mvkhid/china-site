@@ -1,9 +1,13 @@
 export default function OfertaLayout({ subtitle, children }) {
   return (
-    <div className="container" style={{ padding: "60px 40px 100px", maxWidth: 820 }}>
+    <div
+      className="container"
+      style={{ padding: "60px 40px 100px", maxWidth: 820, display: "flex", flexDirection: "column" }}
+    >
       <a
         href="/"
         style={{
+          alignSelf: "flex-start",
           display: "inline-flex",
           alignItems: "center",
           gap: 6,
@@ -15,7 +19,7 @@ export default function OfertaLayout({ subtitle, children }) {
       >
         ← На сайт
       </a>
-      <span className="eyebrow" style={{ marginBottom: 14, display: "inline-flex" }}>
+      <span className="eyebrow" style={{ marginBottom: 14, display: "inline-flex", alignSelf: "flex-start" }}>
         Юридическая информация
       </span>
       <h1 className="modal-title">

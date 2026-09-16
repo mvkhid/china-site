@@ -1,13 +1,12 @@
 import OfertaLayout from "../../components/OfertaLayout";
 
 export const metadata = {
-  title: "Публичная оферта на конвертацию валюты — ИП Магомедгаджиев",
-  description:
-    "Публичная оферта на оказание услуг по конвертации денежных средств (рубли ⇄ юани). ИП Магомедгаджиев Аюб Магомедгаджиевич.",
+  title: "Публичная оферта — Расчёты и курс — ИП Магомедгаджиев",
+  description: "Публичная оферта на оказание услуг по расчётам. ИП Магомедгаджиев Аюб Магомедгаджиевич.",
   robots: "index, follow",
 };
 
-export default function OfertaExchangePage() {
+export default function OfertaCalcPage() {
   return (
     <OfertaLayout subtitle="на оказание услуг по конвертации денежных средств">
       <p className="about-lead">

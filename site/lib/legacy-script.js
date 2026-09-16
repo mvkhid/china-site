@@ -9,7 +9,7 @@
     document.body.style.overflow = '';
   }
   // На странице "Расчёты и курс" ссылка "Публичная оферта" ведёт на оферту
-  // конвертации валюты, на остальных страницах — на оферту выкупа/доставки товара.
+  // по расчётам, на остальных страницах — на оферту выкупа/доставки товара.
   function openOferta(){
     const activePage = document.querySelector('.page.show');
     const id = (activePage && activePage.id === 'page-how') ? 'oferta-exchange-modal' : 'oferta-modal';
@@ -393,7 +393,7 @@
     // (клик всё равно открывает модалку мгновенно — см. openOferta/onclick), чтобы
     // её можно было скопировать/открыть в новой вкладке и попасть на актуальную оферту.
     const ofertaLink = document.getElementById('oferta-link');
-    if(ofertaLink) ofertaLink.href = name === 'how' ? '/oferta-obmen-valyuty' : '/oferta';
+    if(ofertaLink) ofertaLink.href = name === 'how' ? '/oferta-raschety' : '/oferta';
     window.scrollTo({top:0});
     // показать reveal-блоки активной страницы
     setTimeout(()=>{

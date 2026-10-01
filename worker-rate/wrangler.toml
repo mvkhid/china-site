@@ -13,5 +13,5 @@ binding = "RATE_KV"
 id = "7969d2583b3849fda678703c1ca1af86"
 
 [vars]
-# Домен сайта на Vercel (стабильный production-алиас). При подключении своего домена — обновить сюда.
-ALLOWED_ORIGIN = "https://site-iota-ruddy-38.vercel.app"
+# Домен сайта. Сайт переехал: Vercel -> Cloudflare Worker -> GitHub Pages (2026-09-30).
+ALLOWED_ORIGIN = "https://reseller-china.ru"

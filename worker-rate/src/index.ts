@@ -8,11 +8,27 @@ export interface Env {
 
 const KV_KEY = "current";
 
-function corsHeaders(env: Env): HeadersInit {
+// Разрешённые хосты сайта — без привязки к схеме (http/https), чтобы не ловить
+// CORS-рассинхрон при смене хостинга/выпуске SSL. Публичный read-only эндпоинт,
+// без кук и авторизации, так что мягкая проверка тут безопасна.
+const ALLOWED_HOSTS = new Set(["reseller-china.ru", "www.reseller-china.ru"]);
+
+function corsHeaders(request: Request, env: Env): HeadersInit {
+  const origin = request.headers.get("Origin");
+  let allowOrigin = env.ALLOWED_ORIGIN || "*";
+  if (origin) {
+    try {
+      const host = new URL(origin).hostname;
+      if (ALLOWED_HOSTS.has(host)) allowOrigin = origin;
+    } catch {
+      // игнорируем некорректный Origin, останется дефолт
+    }
+  }
   return {
-    "Access-Control-Allow-Origin": env.ALLOWED_ORIGIN || "*",
+    "Access-Control-Allow-Origin": allowOrigin,
     "Access-Control-Allow-Methods": "GET, OPTIONS",
     "Cache-Control": "public, max-age=60",
+    Vary: "Origin",
   };
 }
 
@@ -55,7 +71,7 @@ export default {
     const url = new URL(request.url);
 
     if (request.method === "OPTIONS") {
-      return new Response(null, { headers: corsHeaders(env) });
+      return new Response(null, { headers: corsHeaders(request, env) });
     }
 
     if (url.pathname === "/rate" && request.method === "GET") {
@@ -63,25 +79,25 @@ export default {
       if (!data) {
         return new Response(JSON.stringify({ error: "rate not available yet" }), {
           status: 503,
-          headers: { "Content-Type": "application/json", ...corsHeaders(env) },
+          headers: { "Content-Type": "application/json", ...corsHeaders(request, env) },
         });
       }
       return new Response(JSON.stringify(data), {
-        headers: { "Content-Type": "application/json", ...corsHeaders(env) },
+        headers: { "Content-Type": "application/json", ...corsHeaders(request, env) },
       });
     }
 
     if (url.pathname === "/parse-now" && request.method === "POST") {
       if (!env.DEBUG_TOKEN || request.headers.get("X-Debug-Token") !== env.DEBUG_TOKEN) {
-        return new Response("not found", { status: 404, headers: corsHeaders(env) });
+        return new Response("not found", { status: 404, headers: corsHeaders(request, env) });
       }
       await runParseAndStore(env);
       const data = await readRate(env);
       return new Response(JSON.stringify(data), {
-        headers: { "Content-Type": "application/json", ...corsHeaders(env) },
+        headers: { "Content-Type": "application/json", ...corsHeaders(request, env) },
       });
     }
 
-    return new Response("not found", { status: 404, headers: corsHeaders(env) });
+    return new Response("not found", { status: 404, headers: corsHeaders(request, env) });
   },
 };
